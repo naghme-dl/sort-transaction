@@ -1,0 +1,208 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-secondary-900: rgb(17, 24, 39);
+  --color-secondary-800: rgb(31, 41, 55);
+  --color-secondary-700: rgb(55, 65, 81);
+  --color-secondary-600: rgb(75, 85, 99);
+  --color-secondary-500: rgb(107, 114, 128);
+  --color-secondary-400: rgb(156, 163, 175);
+  --color-secondary-300: rgb(209, 213, 219);
+  --color-secondary-200: rgb(229, 231, 235);
+  --color-secondary-100: rgb(243, 244, 246);
+  --color-secondary-50: rgb(249, 250, 251);
+  --color-secondary-0: rgb(255, 255, 255);
+
+  --color-primary-900: rgb(77, 112, 255);
+  --color-primary-800: rgb(92, 124, 255);
+  --color-primary-700: rgb(92, 124, 255);
+  --color-primary-600: rgb(128, 153, 255);
+  --color-primary-500: rgb(146, 167, 255);
+  --color-primary-400: rgb(164, 182, 255);
+  --color-primary-300: rgb(183, 197, 255);
+  --color-primary-200: rgb(201, 211, 255);
+  --color-primary-100: rgb(219, 226, 255);
+  --color-primary-50: rgb(228, 233, 255);
+
+  --border-radius-tiny: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 7px;
+  --border-radius-lg: 9px;
+
+  --color-success: rgb(0, 192, 115);
+  --color-warning: rgb(255, 153, 0);
+  --color-error: rgb(255, 71, 87);
+  --color-red-700: rgb(185, 28, 28);
+  --color-red-800: rgb(153, 27, 27);
+  --color-red-500: rgb(239, 68, 68);
+  --color-red-300: rgb(252, 165, 165);
+  --color-red-100: rgb(254, 226, 226);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-secondary-100);
+}
+
+body {
+  font-family: Vazirmatn;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1300px;
+  width: 1000px;
+  position: relative;
+  margin-top: 4rem;
+}
+
+/* header style */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #878787;
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.search {
+  width: 40rem;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: var(--color-secondary-0);
+}
+
+.search input {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.material-symbols-outlined {
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #878787;
+}
+.material-symbols-outlined:hover {
+  background-color: var(--color-primary-200);
+
+  color: white;
+}
+
+/* content style */
+
+.unvisible {
+  opacity: 0;
+}
+.show-list {
+  margin-top: 7rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--color-secondary-0);
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: var(--color-primary-800);
+  padding: 2rem 8rem;
+  border: none;
+  border-radius: 28px;
+  z-index: 2;
+}
+
+.data-list-container {
+  height: auto;
+  background-color: var(--color-secondary-0);
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  color: #878787;
+  font-weight: 800;
+}
+
+.data-list-container h3 {
+  margin-bottom: 2rem;
+}
+
+.table-container {
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+}
+.data-list_table {
+  border-collapse: collapse;
+}
+
+.data-list_table tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+.data-list_table th {
+  background-color: var(--color-secondary-100);
+  padding: 1em 7rem;
+}
+
+.data-list_table td {
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem 3rem;
+}
+
+th div {
+  display: flex;
+  align-items: center;
+}
+
+.green {
+  color: #8bc435;
+}
+
+.red {
+  color: rgb(252, 85, 85);
+}
+
+.sortby-btns {
+  width: 8rem;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(207, 167, 167, 0.315);
+  border-top: none;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.sortby-btns button {
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.sortby-btns button:hover {
+  color: white;
+  background-color: var(--color-primary-700);
+}

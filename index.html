@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <section class="container header">
+      <h1>لیست تراکنش ها</h1>
+      <div class="search unvisible">
+        <input class="search-input " type="text"/ placeholder="جستجو تراکنش...">
+        <span class="material-symbols-outlined"> manage_search </span>
+      </div>
+      <button class="show-list">بارگذاری تراکنش ها</button>
+    </section>
+    <section class="container content unvisible">
+      <div class="data-list-container">
+        <h3>لیست تراکنش های شما</h3>
+        <div class="table-container">
+          <table class="data-list_table">
+            <!-- <tr id="stable">
+              <th>ردیف</th>
+              <th>نوع تراکنش</th>
+              <th>
+                <div>
+                  <span>مبلغ</span>
+                  <span class="material-symbols-outlined expand-icon" id="1">
+                    keyboard_arrow_down
+                  </span>
+                </div>
+                <div class="sortby-btns unvisible" id="1">
+                  <button data-id="most">بیشترین</button>
+                  <button data-id="less">کمترین</button>
+                </div>
+              </th>
+              <th>شماره پیگیری</th>
+              <th>
+                <div>
+                  <span>تاریخ تراکنش</span>
+                  <span class="material-symbols-outlined expand-icon" id="2">
+                    keyboard_arrow_down
+                  </span>
+                </div>
+                <div class="sortby-btns unvisible" id="2">
+                  <button data-id="newest">جدیدترین</button>
+                  <button data-id="oldest">قدیمی ترین</button>
+                </div>
+              </th>
+            </tr> -->
+            <!-- <div class="transAction-container"></div> -->
+            <!-- <tr>
+              <td>10</td>
+              <td>افزایش اعتبار</td>
+              <td>1,000,000</td>
+              <td>1231234</td>
+              <td>ساعت ۱۳۹۹/۰۸/۱۲ ۱۲:۲۳</td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
